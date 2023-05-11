@@ -1,0 +1,149 @@
+:root {
+    --overlay: rgba(184, 193, 236, 0.5);
+    --background: #0f0e17;
+    --button: #ff8906;
+    --headline: #fffffe;
+    --paragraph: #a7a9be;
+    --buttonText: #fffffe;
+    --stroke: black;
+    --main: #fffffe;
+    --highlight: #ff8906;
+    --secondary: #f25f4c;
+    --tertiary: #e53170;
+}
+:root {
+  --overlay: rgba(184, 193, 236, 0.5);
+  --background:#232946;
+  --button: #ff8906;
+  --headline: #fffffe;
+  --paragraph: #b8c1ec;
+  --buttonText: #232946;
+  --stroke: #121629;
+  --main: #b8c1ec;
+  --highlight: #eebbc3;
+  --secondary: #fffffe;
+  --tertiary: #eebbc3;
+}
+
+/* CSS Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100%;
+    min-width: 100vh;
+}
+
+/* End of CSS Reset */
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: bottom / 100% url('https://i.ibb.co/jZ8Wj48/camera-selfie.jpg');
+    height: 700px;
+    background-size: cover;
+    margin-top: 200px;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+}
+
+h1 {
+    font-size: 8rem;
+    stroke: var(--stroke);
+    stroke-width: 3px;
+    color: var(--buttonText);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    width: 294px;
+    height: 90px;
+    padding: 10px 20px;
+    font-size: 58px;
+    color: var(--background);
+}
+
+/* Medium devices (iPad and larger) */
+@media only screen and (min-width: 768px) {
+    #hero {
+        margin-top: 0;
+    }
+}
+
+/* Mobile landscape (phone landscape) */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    #hero {
+        margin-top: 0;
+    }
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+}
+
+h1 {
+    font-size: 8rem;
+    stroke: var(--stroke);
+    stroke-width: 3px;
+    color: var(--buttonText);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    width: 294px;
+    height: 90px;
+    padding: 10px 20px;
+    font-size: 58px;
+    color: var(--background);
+    border-radius: 1rem;
+}
+
+.image-gallery{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.image-item {
+    flex: 1 0 calc(35% - 20px);
+    /* this will allow  images to grow and shrink as needed. 25% is the base size */
+    margin: 10px;
+max-width: 100%;
+height: auto;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* This will crop the image to fit the new size */
+}
+/* 
+.image-gallery:nth-child(1) {
+height: 100px;
+} */
+
+.image-gallery:nth-child(2) {}
+
+
+.image-gallery:nth-child(2) {}
+
+
+.image-gallery:nth-child(2) {}
+
+
+.image-gallery:nth-child(2) {}
+
+
+.image-gallery:nth-child(2) {}
+
