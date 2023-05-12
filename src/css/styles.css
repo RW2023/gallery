@@ -89,16 +89,6 @@ h1 {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-button {
-    width: 294px;
-    height: 90px;
-    padding: 10px 20px;
-    font-size: 58px;
-    color: var(--background);
-    border-radius: 1rem;
-    
-}
-
 
 main>h1{
     font-size: 4rem;
