@@ -185,8 +185,8 @@ i.fa-solid {
 }
 
 .svg-inline--fa{
-    zoom: 4;
-    padding: 1rem;
+    zoom: 8;
+    padding: .5rem;
 }
 
 .socials>h2{
@@ -231,5 +231,10 @@ button:hover{
 }
    .image-item>h2 {
        font-size: initial;
+   }
+
+   .svg-inline--fa {
+       zoom: 5;
+       padding: .5rem;
    }
 }
