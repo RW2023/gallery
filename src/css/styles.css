@@ -177,21 +177,30 @@ i.fa-solid {
 }
 
 .svg-inline--fa{
-    zoom: 3;
+    zoom: 15;
 }
 
-a>i{
-    zoom: 8;
-}
 
 a {
     color: var(--tertiary);
     text-decoration: none;
 }
 
+button{
+    color: var(--buttonText);
+    background-color: var(--button);
+    border: 1px solid var(--tertiary);
+    border-radius: 0.5rem;
+}
+
 a:hover {
     color: var(--highlight);
     text-decoration: underline;
+}
+
+button:hover{
+    background-color: #2cb67d;
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
