@@ -34,6 +34,7 @@ body {
     background-size: cover;
     margin-top: 200px;
     max-width: 100%;
+    flex: 1 0 calc(100% - 20px);
 }
 
 .image-gallery>h1{
@@ -128,6 +129,8 @@ height: auto;
 border: 1px solid var(--tertiary);
 border-radius: .5rem;
 }
+
+
 
 .image-item img {
     width: 100%;
