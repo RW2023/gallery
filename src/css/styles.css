@@ -67,6 +67,11 @@ button {
     color: var(--button);
 }
 
+.socials{
+    align-items: flex-start;
+    margin: 30px;
+}
+
 /* Medium devices (iPad and larger) */
 @media only screen and (min-width: 768px) {
     #hero {
@@ -180,7 +185,18 @@ i.fa-solid {
 }
 
 .svg-inline--fa{
-    zoom: 15;
+    zoom: 4;
+    padding: 1rem;
+}
+
+.socials>h2{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--background);
+    background-color: var(--button);
+    stroke: var(--stroke);
+    border: 1px solid var(--tertiary);
+    border-radius: .5rem;
 }
 
 
