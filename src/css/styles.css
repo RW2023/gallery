@@ -130,7 +130,7 @@ main>h1{
 
 .image-item {
     flex: 1 0 calc(30% - 20px);
-    /* this will allow  images to grow and shrink as needed. 25% is the base size */
+    /* this will allow  images to grow and shrink as needed. Adjust % of the base size to get different numbers of pics across */
     margin: 10px;
 max-width: 100%;
 height: auto;
@@ -150,23 +150,23 @@ height: auto;
 }
 
 
-.image-gallery:nth-child(1) {
-height: 100px;
-} */
+/* .image-gallery:nth-child(1) {
+
+} 
 
 .image-gallery:nth-child(2) {}
 
 
-.image-gallery:nth-child(2) {}
+.image-gallery:nth-child(3) {}
 
 
-.image-gallery:nth-child(2) {}
+.image-gallery:nth-child(4) {}
 
 
-.image-gallery:nth-child(2) {}
+.image-gallery:nth-child(5) {}
 
 
-.image-gallery:nth-child(2) {}
+.image-gallery:nth-child(6) {} */
 
 @-webkit-keyframes greenPulse {
     from {
@@ -191,40 +191,13 @@ p.enter {
     padding-left: 61px;
     padding-right: 61px;
     color: var(--buttonText);
+    align-items: self-start;
     
 }
 
-div.circle {
-    margin: 100px auto;
-    width: 200px;
-    height: 200px;
-    background-color: var(--button);
-    border-radius: 1rem;
-}
 
-.circle:hover {
-    -moz-border-radius: 200px/200px;
-    -webkit-border-radius: 200px 200px;
-    border-radius: 200px/200px;
-    ;
-    border: 1px solid var(--highlight);
-    width: 200px;
-    height: 200px;
-    outline: none;
-    -webkit-animation-name: greenPulse;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-}
-
-.circle:hover {
-    box-shadow: 0 0 2px #91bd09;
-    -webkit-box-shadow: 0 0 2px #91bd09;
-    -moz-box-shadow: 0 0 2px #91bd09;
-    border: 1px solid #91bd09;
-}
-
-.fa-solid{
-    zoom: 3;;
+i.fa-solid {
+    font-size: 2rem;
 }
 
 .svg-inline--fa{
