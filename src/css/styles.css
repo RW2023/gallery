@@ -222,3 +222,25 @@ div.circle {
     -moz-box-shadow: 0 0 2px #91bd09;
     border: 1px solid #91bd09;
 }
+
+.fa-solid{
+    zoom: 3;;
+}
+
+.svg-inline--fa{
+    zoom: 3;
+}
+
+a>i{
+    zoom: 8;
+}
+
+a {
+    color: var(--tertiary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--highlight);
+    text-decoration: underline;
+}
