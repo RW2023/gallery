@@ -100,13 +100,6 @@ button {
 }
 
 
-
-div.circle:hover,
-div.circle.clicked {
-    /* Hover and click styles */
-    background-color: var(--highlight);
-}
-
 main>h1{
     font-size: 4rem;
     text-align: center;
