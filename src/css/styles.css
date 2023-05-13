@@ -40,6 +40,28 @@ body {
 .image-gallery>h1 {
     font-size: 3.5rem;
     text-align: center;
+    text-shadow: 0 9px 4px var(--overlay);
+}
+
+.image-gallery>h2 {
+    font-size: 8rem;
+}
+
+  .socials>h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: var(--background);
+      background-color: var(--button);
+      stroke: var(--stroke);
+      border: 1px solid var(--tertiary);
+      border-radius: .5rem;
+  }
+
+button {
+    color: var(--buttonText);
+    background-color: var(--button);
+    border: 1px solid var(--tertiary);
+    border-radius: 0.5rem;
 }
 
 body {
@@ -56,21 +78,47 @@ h1 {
     text-shadow: 0 2px 4px var(--overlay);
 }
 
-.image-gallery>h2 {
-    font-size: 8rem;
+
+
+.image-item {
+    flex: 1 0 calc(85% - 20px);
+    /* Flex: 1 0 calc(50% - 20px); is shorthand for flex-grow: 1, flex-shrink: 0, flex-basis: calc(50% - 20px);
+        /* This allows the images to grow and shrink as needed. Adjust the percentage of the base size to get different numbers of elements across. */
+
+}
+
+a {
+    color: var(--tertiary);
+    text-decoration: none;
 }
 
 button {
-    width: 294px;
-    height: 90px;
-    padding: 10px 20px;
-    font-size: 58px;
-    color: var(--button);
+    color: var(--buttonText);
+    background-color: var(--button);
+    border: 1px solid var(--tertiary);
+    border-radius: 0.5rem;
+    width: 198px;
+        height: 90px;
+        font-size: 2rem;
+}
+
+a:hover {
+    color: var(--highlight);
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: #2cb67d;
 }
 
 .socials {
     align-items: flex-start;
     margin: 30px;
+}
+
+.socials .svg-inline--fa {
+    font-size: 10rem;
+    padding: 7rem;
 }
 
 /* Medium devices (iPad and larger) */
@@ -89,6 +137,12 @@ button {
         /* Flex: 1 0 calc(50% - 20px); is shorthand for flex-grow: 1, flex-shrink: 0, flex-basis: calc(50% - 20px);
         /* This allows the images to grow and shrink as needed. Adjust the percentage of the base size to get different numbers of elements across. */
 
+    }
+
+    .image-item>h2 {
+        font-size: 3rem;
+        color: var(--background);
+        background-color: var(--button);
     }
 }
 
@@ -135,9 +189,9 @@ button {
         width: 198px;
         height: 90px;
         padding: 10px 20px;
-        font-size: 58px;
+        font-size: 2rem;
         border-radius: 1rem;
-        color: var(--button);
+        color: var(--background);
     }
 
     .image-item>h2 {
@@ -175,6 +229,7 @@ button {
     main>h1 {
         font-size: 4rem;
         text-align: center;
+        text-shadow: 0 9px 4px var(--overlay);
     }
 
     .image-item h2 {
