@@ -37,7 +37,7 @@ body {
     flex: 1 0 calc(100% - 20px);
 }
 
-.image-gallery>h1{
+.image-gallery>h1 {
     font-size: 4rem;
     text-align: center;
 }
@@ -56,9 +56,10 @@ h1 {
     text-shadow: 0 2px 4px var(--overlay);
 }
 
-.image-gallery>h2{
+.image-gallery>h2 {
     font-size: 8rem;
 }
+
 button {
     width: 294px;
     height: 90px;
@@ -67,7 +68,7 @@ button {
     color: var(--button);
 }
 
-.socials{
+.socials {
     align-items: flex-start;
     margin: 30px;
 }
@@ -75,23 +76,37 @@ button {
 /* Medium devices (iPad and larger) */
 @media only screen and (min-width: 768px) {
     #hero {
-        margin-top: 0;
+        margin-top: 60px;
+    }
+
+    .svg-inline--fa {
+        zoom: 15;
+        padding: .5rem;
     }
 }
 
 /* Mobile landscape (phone landscape) */
 @media only screen and (max-width: 767px) and (orientation: landscape) {
     .image-item {
-            flex: 1 0 calc(25% - 20px);
-            /* this will allow  images to grow and shrink as needed. Adjust % of the base size to get different numbers of pics across */
+        flex: 1 0 calc(25% - 20px);
+        /* this will allow  images to grow and shrink as needed. Adjust % of the base size to get different numbers of pics across */
     }
+
     #hero {
         margin-top: 0;
     }
+
+    #hero>svg-inline--fa {
+        zoom: 5;
+        padding: .5rem;
+    }
 }
+
+/* End of Mobile Landscape styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background);
+    margin-top: 12rem
 }
 
 h1 {
@@ -103,7 +118,7 @@ h1 {
 }
 
 
-main>h1{
+main>h1 {
     font-size: 4rem;
     text-align: center;
 }
@@ -114,7 +129,7 @@ main>h1{
     stroke: var(--stroke);
 }
 
-.image-gallery{
+.image-gallery {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -129,10 +144,10 @@ main>h1{
     flex: 1 0 calc(50% - 20px);
     /* this will allow  images to grow and shrink as needed. Adjust % of the base size to get different numbers of pics across */
     margin: 10px;
-max-width: 100%;
-height: auto;
-border: 1px solid var(--tertiary);
-border-radius: .5rem;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--tertiary);
+    border-radius: .5rem;
 }
 
 
@@ -145,7 +160,7 @@ border-radius: .5rem;
     /* This will crop the image to fit the new size */
 }
 
-.image-item > h2{
+.image-item>h2 {
     font-size: 3rem;
     color: var(--background);
     background-color: var(--button);
@@ -184,12 +199,12 @@ i.fa-solid {
     font-size: 2rem;
 }
 
-.svg-inline--fa{
-    zoom: 9;
+.svg-inline--fa {
+    zoom: 15;
     padding: .5rem;
 }
 
-.socials>h2{
+.socials>h2 {
     text-align: center;
     font-size: 2rem;
     color: var(--background);
@@ -205,7 +220,7 @@ a {
     text-decoration: none;
 }
 
-button{
+button {
     color: var(--buttonText);
     background-color: var(--button);
     border: 1px solid var(--tertiary);
@@ -217,24 +232,25 @@ a:hover {
     text-decoration: underline;
 }
 
-button:hover{
-    background-color: #2cb67d;  
+button:hover {
+    background-color: #2cb67d;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-.image-item {
-    flex: 1 0 calc(25% - 20px);
-    /* Flex: 1 0 calc(50% - 20px); is shorthand for flex-grow: 1, flex-shrink: 0, flex-basis: calc(50% - 20px);
+    .image-item {
+        flex: 1 0 calc(25% - 20px);
+        /* Flex: 1 0 calc(50% - 20px); is shorthand for flex-grow: 1, flex-shrink: 0, flex-basis: calc(50% - 20px);
     /* This allows the images to grow and shrink as needed. Adjust the percentage of the base size to get different numbers of elements across. */
- 
-}
-   .image-item>h2 {
-       font-size: initial;
-   }
 
-   .svg-inline--fa {
-       zoom: 5;
-       padding: .5rem;
-   }
+    }
+
+    .image-item>h2 {
+        font-size: initial;
+    }
+
+    .svg-inline--fa {
+        zoom: 5;
+        padding: .5rem;
+    }
 }
