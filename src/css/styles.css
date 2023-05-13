@@ -97,8 +97,8 @@ button {
     }
 
     #hero>svg-inline--fa {
-
         padding: .5rem;
+
     }
 
     h1 {
@@ -119,10 +119,18 @@ button {
         border-radius: .5rem;
     }
 
-   .socials .svg-inline--fa {
+    .socials .svg-inline--fa {
         font-size: 5rem;
         padding: .5rem;
     }
+        button {
+            width: 198px;
+            height: 90px;
+            padding: 10px 20px;
+            font-size: 58px;
+            border-radius: 1rem;
+            color: var(--button);
+        }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -173,9 +181,9 @@ button {
     }
 
     .image-item {
-        flex: 1 0 calc(50% - 20px);
+        flex: 1 0 calc(25% - 20px);
         /* this will allow  images to grow and shrink as needed. Adjust % of the base size to get different numbers of pics across */
-        margin: 10px;
+        margin: 2px;
         max-width: 100%;
         height: auto;
         border: 1px solid var(--tertiary);
