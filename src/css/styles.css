@@ -160,7 +160,7 @@ button {
     body {
         font-family: 'Poppins', sans-serif;
         background-color: var(--background);
-        margin-top: 12rem
+        margin-top: 2rem
     }
 
     h1 {
@@ -227,26 +227,6 @@ button {
     .image-item:hover {
         transform: scale(1.05);
     }
-
-
-    /* .image-gallery:nth-child(1) {
-
-} 
-
-.image-gallery:nth-child(2) {}
-
-
-.image-gallery:nth-child(3) {}
-
-
-.image-gallery:nth-child(4) {}
-
-
-.image-gallery:nth-child(5) {}
-
-
-.image-gallery:nth-child(6) {} */
-
 
 
     i.fa-solid {
