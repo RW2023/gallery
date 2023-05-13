@@ -76,7 +76,7 @@ button {
 /* Medium devices (iPad and larger) */
 @media only screen and (min-width: 768px) {
     #hero {
-        margin-top: 60px;
+        margin-top: 10px;
     }
 
     .svg-inline--fa {
