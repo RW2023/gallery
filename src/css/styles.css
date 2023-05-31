@@ -34,7 +34,7 @@ body {
     background-size: cover;
     margin-top: 10px;
     max-width: 100%;
-    flex: 1 0 calc(25% - 20px);
+    flex: 1 0 calc(100% - 20px);
 }
 
 .image-gallery>h1 {
@@ -88,7 +88,9 @@ h1 {
 .image-item {
     flex: 1 0 auto;
     align-self: stretch;
-    width: 100%;
+  max-width: 100%;
+    height: auto;
+    justify-self: center;
 }
 
 a {
