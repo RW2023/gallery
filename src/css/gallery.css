@@ -1,0 +1,118 @@
+:root {
+    --overlay: rgba(184, 193, 236, 0.5);
+    --background: #16161a;
+    --button: #7f5af0;
+    --headline: #fffffe;
+    --paragraph: #94a1b2;
+    --buttonText: #fffffe;
+    --stroke: black;
+    --main: #fffffe;
+    --highlight: #7f5af0;
+    --secondary: #72757e;
+    --tertiary: #2cb67d;
+}
+
+/* CSS Reset */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100%;
+    min-width: 100vh;
+}
+
+/* End of CSS Reset */
+
+main{
+    position: relative;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--main);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.image-gallery{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.image-card{
+    border: 1px solid var(--tertiary);
+    border-radius: 0.25em;
+    box-shadow: 0 0 0.5em var(--highlight);
+    margin: 1em 0 0 0;
+    background-color: var(--stroke);
+    margin: auto;
+    width: max-content;
+    margin: 1em;
+}
+
+.image-title>h2{
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--headline);
+    background-color: var(--stroke);
+    padding: 0.5em;
+    border-radius: 0.25em;
+    border: 1px solid var(--tertiary);
+    margin: 1rem 0 0 0;
+    box-shadow: 0 0 0.5em var(--highlight);
+    
+}
+
+.image-container{
+    background-color: var(--stroke);
+    margin: 0.25em;
+}
+
+
+img {
+    width: auto;
+    height: 21em;
+    object-fit: cover;
+    border-radius: 0.25em;
+    margin: 1em;
+    border: 1px solid var(--tertiary);
+    box-shadow: 0 0 0.5em var(--tertiary);
+    transition: all 0.5s ease-in-out;;
+}
+
+img:hover{
+    box-shadow: 0 0 0.5em var(--highlight);
+    height: calc(21em + 3em);
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 768px){
+    img{
+        width: auto;
+        height: 15em;
+    }
+    img:hover{
+        height: calc(15em + 3em);
+    }
+
+.image-title>h2 {
+font-size: 1em;
+display: inline-block;
+}
+
+.image-gallery {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+    text-align: center;
+}
+}
