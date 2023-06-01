@@ -39,7 +39,7 @@ body{
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
     text-align: center;
@@ -95,10 +95,10 @@ img:hover{
 @media screen and (min-width: 768px){
     img{
         width: auto;
-        height: 15em;
+        height: 23em;
     }
     img:hover{
-        height: calc(15em + 3em);
+        height: calc(23em + 3em);
     }
 
 .image-title>h2 {
