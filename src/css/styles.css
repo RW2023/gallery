@@ -25,20 +25,43 @@ body {
 /* End of CSS Reset */
 
 body{
-    background-color: var(--background);
+    background-color: black;
     color: var(--main);
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    max-width: 90vw;
+    margin: auto;
 }
 
 .grid_container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 4fr)); */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1,1fr);
     gap: 1em;
     border: 1px solid var(--tertiary);
     border-radius: 1em;
 }
 
+.blackAndWhite h2{
+  text-align: center;
+}
+
  h1{
     text-align: center;
+    color: var(--headline);
+    font-size: 4em;
+}
+
+h2{
+    text-align: center;
+    color: var(--headline);
+}
+
+img{
+    height: 11em;
+    width: auto;
+    border: 1px solid var(--button);
+    border-radius: .25em;
+    margin: 1em;
 }
