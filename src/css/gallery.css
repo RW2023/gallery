@@ -39,7 +39,7 @@ body{
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
     text-align: center;
@@ -77,7 +77,7 @@ body{
 
 img {
     width: auto;
-    height: 21em;
+    height: 23em;
     object-fit: cover;
     border-radius: 0.25em;
     margin: 1em;
@@ -95,10 +95,10 @@ img:hover{
 @media screen and (min-width: 768px){
     img{
         width: auto;
-        height: 23em;
+        height: 10em;
     }
     img:hover{
-        height: calc(23em + 3em);
+        height: calc(10em + 2em);
     }
 
 .image-title>h2 {
