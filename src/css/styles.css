@@ -34,7 +34,6 @@ body{
     color: var(--main);
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    max-width: 90vw;
     margin: auto;
 }
 
@@ -46,14 +45,25 @@ body{
     gap: 1em;
     border: 1px solid var(--tertiary);
     border-radius: 1em;
+    border-bottom: 1em;
+    width: max-content;
+    margin: auto;
+}
+
+.grid_container div{
+    border: 1px solid var(--button);
+    border-radius: var(--radiusStyle1);
+    margin: 1em;
+    background-color: var(--background);
+    box-shadow: var(--dropShadow);
 }
 
 .grid_container.blackAndWhite{
     filter: grayscale(100%);
 }
-.blackAndWhite h2{
+/* .blackAndWhite h2{
   text-align: center;
-}
+} */
 
  h1{
     text-align: center;
@@ -98,6 +108,7 @@ img{
 }
 
 .grid_container h2{
+    background-color: var(--stroke);
     color: var(--headline);
     font-size: 2em;
     margin: 0.25em;
@@ -105,14 +116,23 @@ img{
 }
 
 
+
+
 #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: center / 100% url('https://i.ibb.co/DQKyCsm/f47dc6d6863881e1bf4d6e12822f1ded.jpg');
-    height: 250px;
+    /* height: 250px; */
     border: none;
     border-radius: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 1em;
+    margin-bottom: 1em;
+    margin: auto;
+    height: 100%;
+    width: auto
 }
 
 #hero h1{
@@ -122,6 +142,7 @@ img{
     stroke: 2px var(--stroke);
     margin-top: 1em ;
     text-shadow: 2px 2px var(--stroke);
+    text-align: center;
 }
 
 #hero h2{
@@ -132,6 +153,10 @@ img{
     text-shadow: 2px 2px var(--stroke);
     border: none;
     background: none;
+}
+
+#hero fa-brands{
+    font-size: 1.5em;
 }
 
 
@@ -155,8 +180,10 @@ figure button{
     background-color: var(--button);
     color: var(--headline);
     padding: 0.5em;
-    font-size: 2em;
+    font-size: 1em;
 }
+
+
 
 /* .figCaption>a:link {
     font-size: .5em;
@@ -184,8 +211,18 @@ figure button{
   p{
     font-size: 1em
   }
-    
+
+  .grid_container{
+    width: 80vw;
+  }
+ 
+  figcaption{
+    font-size: 0.75em;
+  }
+  
 }
+
+
 
 
     
