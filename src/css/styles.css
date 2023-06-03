@@ -12,6 +12,8 @@
   --tertiary: #eebbc3;
   --shadow:#1ce766;
   --dropShadow: 0 0 0.5em var(--button);
+  --radiusStyle1: 20px 20px 37px 37px / 23px 30px 0px 0px; 
+  --buttonRadius: 1em 1em 1em 1em;
 }
 
 /* CSS Reset */
@@ -22,6 +24,7 @@ body {
     box-sizing: border-box;
     min-height: 100%;
     min-width: 100vh;
+    
 }
 
 /* End of CSS Reset */
@@ -45,6 +48,9 @@ body{
     border-radius: 1em;
 }
 
+.grid_container.blackAndWhite{
+    filter: grayscale(100%);
+}
 .blackAndWhite h2{
   text-align: center;
 }
@@ -58,16 +64,21 @@ body{
 h2{
     text-align: center;
     color: var(--headline);
-    background-color: var(--background);
+    background-color: var(--stroke);
     border: 1px solid var(--button);
     border-radius: .25em;
     margin: 0.25em;
     padding: 0.25em;
+    font-size: 3em;
 }
 
 p{
     color: var(--paragraph);
     margin: 0.25em;
+    font-size: 2em;
+    text-align: left;
+    line-height: 1.5em;
+    margin: auto;
 }
 
 img{
@@ -79,6 +90,49 @@ img{
     box-shadow: var(--dropShadow);  
 }
 
+.grid-item{
+    background-color: var(--background);
+    border: 1px solid var(--button);
+    border-radius: 1em;
+    box-shadow: var(--dropShadow);
+}
+
+.grid_container h2{
+    color: var(--headline);
+    font-size: 2em;
+    margin: 0.25em;
+    border-radius: var(--radiusStyle1);
+}
+
+
+#hero {
+    background: center / 100% url('https://i.ibb.co/DQKyCsm/f47dc6d6863881e1bf4d6e12822f1ded.jpg');
+    height: 250px;
+    border: none;
+    border-radius: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1em;
+}
+
+#hero h1{
+    display: inline-block;
+    color: var(--button);
+    font-size: 4em;
+    stroke: 2px var(--stroke);
+    margin-top: 1em ;
+    text-shadow: 2px 2px var(--stroke);
+}
+
+#hero h2{
+    display: inline-block;
+    color: var(--button);
+    font-size: 1.5em;
+    stroke: 2px var(--stroke);
+    text-shadow: 2px 2px var(--stroke);
+    border: none;
+    background: none;
+}
 
 
 a:link {
@@ -87,9 +141,26 @@ a:link {
 }
 
 a:hover {
-    color: var(--paragraph);
+    color: var(--headline);
     
 }
+
+a:visited {
+    color: var(--button);
+}
+
+figure button{
+    border: 1px solid var(--headline);
+    border-radius: 1em 1em 1em 1em;
+    background-color: var(--button);
+    color: var(--headline);
+    padding: 0.5em;
+}
+
+/* .figCaption>a:link {
+    font-size: .5em;
+    text-align: center;
+} */
 
 @media screen and (max-width: 600px) {
     .grid_container{
@@ -107,3 +178,13 @@ a:hover {
     }
     
 }
+
+@media screen and (min-width: 768px) {
+  p{
+    font-size: 1em
+  }
+    
+}
+
+
+    
