@@ -115,7 +115,11 @@ img{
     border-radius: var(--radiusStyle1);
 }
 
-
+.fa-solid{
+    font-size: 2em;
+    margin: 0.25em;
+    pad: .5em;
+}
 
 
 #hero {
@@ -156,12 +160,12 @@ img{
 }
 
 #hero fa-brands{
-    font-size: 1.5em;
+    font-size: 3.5em;
 }
 
 
 a:link {
-    color: var(--button);
+    color: var(--main);
     text-decoration: none;
 }
 
@@ -171,7 +175,7 @@ a:hover {
 }
 
 a:visited {
-    color: var(--button);
+    color: var(--main);
 }
 
 figure button{
